@@ -1,0 +1,51 @@
+{
+    "name": "pict-service-commandlineutility",
+    "version": "1.0.0",
+    "description": "Pict Command-Line Utility Service",
+    "main": "source/Pict-CLIProgram-CommandLineUtility.js",
+    "scripts": {
+        "test": "npx mocha -u tdd -R spec",
+        "start": "node source/Pict-CLIProgram-Runner.js",
+        "tests": "npx mocha -u tdd --exit -R spec --grep",
+        "coverage": "npx nyc --reporter=lcov --reporter=text-lcov ./node_modules/mocha/bin/_mocha -- -u tdd -R spec",
+        "build": "npx quack build",
+        "docker-dev-build": "docker build ./ -f Dockerfile_LUXURYCode -t pict-service-commandlineutility-image:local",
+        "docker-dev-run": "docker run -it -d --name pict-service-commandlineutility-dev -p 48068:8080 -p 37276:8086 -v \"$PWD/.config:/home/coder/.config\"  -v \"$PWD:/home/coder/pict-service-commandlineutility\" -u \"$(id -u):$(id -g)\" -e \"DOCKER_USER=$USER\" pict-service-commandlineutility-image:local",
+        "docker-dev-shell": "docker exec -it pict-service-commandlineutility-dev /bin/bash"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stevenvelozo/pict-service-commandlineutility.git"
+    },
+    "author": "steven velozo <steven@velozo.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/stevenvelozo/pict-service-commandlineutility/issues"
+    },
+    "homepage": "https://github.com/stevenvelozo/pict-service-commandlineutility#readme",
+    "devDependencies": {
+        "quackage": "^1.0.17"
+    },
+    "dependencies": {
+        "commander": "^11.0.0",
+        "pict": "^1.0.113"
+    },
+    "mocha": {
+        "diff": true,
+        "extension": [
+            "js"
+        ],
+        "package": "./package.json",
+        "reporter": "spec",
+        "slow": "75",
+        "timeout": "5000",
+        "ui": "tdd",
+        "watch-files": [
+            "source/**/*.js",
+            "test/**/*.js"
+        ],
+        "watch-ignore": [
+            "lib/vendor"
+        ]
+    }
+}
