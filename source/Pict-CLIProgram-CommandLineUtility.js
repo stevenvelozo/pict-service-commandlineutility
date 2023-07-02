@@ -8,7 +8,11 @@ const libServiceCommandLineCommand = require('./Pict-Service-CommandLineCommand.
 const defaultCommandLineUtilityOptions = (
 	{
 		"Product": "Pict CLI Utility",
-		"Version": "0.0.1"
+		"Version": "0.0.1",
+
+		"Command": "DEFAULT_COMMAND",
+
+		"Description": "Default Command-line Utility",
 	});
 
 class CLIProgram extends libPict
@@ -23,8 +27,8 @@ class CLIProgram extends libPict
 		// Instantiate the Command Line Utility service
 		this.serviceManager.instantiateServiceProvider('CommandLineUtility',
 		{
-			"Command": "DEFAULT_COMMAND",
-			"Description": "Default Command-line Utility",
+			"Command": this.settings.Command,
+			"Description": this.settings.Description,
 			"Version": this.settings.Version
 		});
 
@@ -34,7 +38,7 @@ class CLIProgram extends libPict
 			// pCommands is expected to be an array that is a list of prototypes for commands, which are self-contained services!
 			for (let i = 0; i < pCommands.length; i++)
 			{
-				this.CommandLineUtility.addCommandFromClass(pCommands);
+				this.CommandLineUtility.addCommandFromClass(pCommands[i]);
 			}
 		}
 		else
