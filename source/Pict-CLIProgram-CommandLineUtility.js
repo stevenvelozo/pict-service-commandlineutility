@@ -140,7 +140,9 @@ class CLIProgram extends libPict
 			}
 			catch(pError)
 			{
-				this.log.error(`Error loading configuration file from home folder [${tmpHomeFolder}]: ${pError.message}`);
+				let tmpErrorMessage = `Error loading configuration file from home folder [${tmpHomeFolder}]: ${pError.message}`;
+				fAddConfigurationPhase('Home Folder', tmpErrorMessage, false);
+				this.log.error(tmpErrorMessage);
 			}
 		}
 		catch(pHomeError)
@@ -163,7 +165,9 @@ class CLIProgram extends libPict
 			}
 			catch(pError)
 			{
-				this.log.error(`Error loading configuration file from CWD [${tmpCWD}]: ${pError.message}`);
+				let tmpErrorMessage = `Error loading configuration file from CWD [${tmpCWD}]: ${pError.message}`;
+				fAddConfigurationPhase('CWD Configuration', tmpErrorMessage, false);
+				this.log.error(tmpErrorMessage);
 			}
 			// TODO: If someone has configs everywhere (e.g. cwd and cwd/.config), which one comes first?
 			try
@@ -180,7 +184,10 @@ class CLIProgram extends libPict
 			}
 			catch(pError)
 			{
-				this.log.error(`Error loading configuration file from CWD/.config [${tmpCWD}/.config]: ${pError.message}`);
+				let tmpErrorMessage = `Error loading configuration file from CWD [${tmpCWD}/.config]: ${pError.message}`;
+				fAddConfigurationPhase('CWD Config Folder Configuration', tmpErrorMessage, false);
+				this.log.error(tmpErrorMessage);
+
 			}
 		}
 		catch(pCWDError)
