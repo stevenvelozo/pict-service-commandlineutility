@@ -25,4 +25,4 @@ let _Program = new libCLIProgram(_ProgramConfiguration,
 		require('./DebugCommand.js')
 	]);
 
-_Program.run(['node', 'Harness', 'explain-config']);
+_Program.run();
