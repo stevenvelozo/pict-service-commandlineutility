@@ -19,6 +19,8 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		let tmpOptions = Object.assign({}, JSON.parse(JSON.stringify(defaultCommandOptions)), pOptions);
 		super(pFable, tmpOptions, pServiceHash);
 
+		this.AppData = this.fable.AppData;
+
 		this.serviceType = 'CommandLineCommand';
 	}
 
@@ -67,20 +69,109 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	run(pArgumentString, pCommandOptions, fCallback)
+	onBeforeRun(pArgumentString, pCommandOptions)
 	{
-		// The synchronous version of the command
-		return fCallback();
-	};
+		if (this.pict.LogNoisiness > 3)
+		{
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onBeforeRun...`);
+		}
+	}
 
-	async runAsync(pArgumentString, pCommandOptions)
+	onRun(pArgumentString, pCommandOptions)
+	{
+		if (this.pict.LogNoisiness > 3)
+		{
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onRun...`);
+		}
+	}
+
+	onAfterRun(pArgumentString, pCommandOptions)
+	{
+		if (this.pict.LogNoisiness > 3)
+		{
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onAfterRun...`);
+		}
+	}
+
+	onBeforeRunAsync(pArgumentString, pCommandOptions, fCallback)
+	{
+		try
+		{
+			let tmpResult = this.onBeforeRun(pArgumentString, pCommandOptions);
+			return fCallback(null, tmpResult);
+		}
+		catch(pError)
+		{
+			return fCallback(pError)
+		}
+	}
+
+	onRunAsync(pArgumentString, pCommandOptions, fCallback)
+	{
+		try
+		{
+			let tmpResult = this.onRun(pArgumentString, pCommandOptions);
+			return fCallback(null, tmpResult);
+		}
+		catch(pError)
+		{
+			return fCallback(pError)
+		}
+	}
+
+	onAfterRunAsync(pArgumentString, pCommandOptions, fCallback)
+	{
+		try
+		{
+			let tmpResult = this.onAfterRun(pArgumentString, pCommandOptions);
+			return fCallback(null, tmpResult);
+		}
+		catch(pError)
+		{
+			return fCallback(pError)
+		}
+	}
+
+	async runAsync(pArgumentString, pCommandOptions, fCallback)
+	{
+		let tmpAnticipate = this.fable.serviceManager.instantiateServiceProviderWithoutRegistration('Anticipate');
+
+		if (this.pict.LogNoisiness > 2)
+		{
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} beginning async run...`);
+		}
+
+		tmpAnticipate.anticipate(this.onBeforeRun.bind(this));
+		tmpAnticipate.anticipate(this.onRun.bind(this));
+		tmpAnticipate.anticipate(this.onAfterRun.bind(this));
+
+		tmpAnticipate.wait(
+			(pError) =>
+			{
+				if (this.pict.LogNoisiness > 2)
+				{
+					this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} async run completed.`);
+				}
+				return fCallback(pError);
+			});
+	}
+
+	async runPromise(pArgumentString, pCommandOptions)
 	{
 		// Build an async function to wrap the non-async behavior by default
 		return new Promise(
 			(pResolve, pReject) =>
 			{
-				return this.run(pArgumentString, pCommandOptions, pResolve);
-			});
+				this.runAsync(pArgumentString, pCommandOptions,
+					(pError, pResult) =>
+					{
+						if (pError)
+						{
+							return pReject(pError);
+						}
+						return pResolve(pResult)
+					});
+			});		
 	}
 }
 

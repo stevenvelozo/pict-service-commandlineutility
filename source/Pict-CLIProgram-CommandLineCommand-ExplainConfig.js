@@ -10,20 +10,13 @@ class ExplainConfigCommand extends libCommandLineCommand
 		this.addCommand();
 	}
 
-	run(pOptions, pCommand, fCallback)
+	onRun(pOptions, pCommand)
 	{
 		// Execute the command
 		this.log.info(`Gathering and explaining configuration...`);
-
-		// By passing in false, it doesn't apply the config and just explains it.
+		// By passing in false, it doesn't apply the config and just explains it and returns the explanation object.
 		let tmpConfigurationExplanation = this.fable.gatherProgramConfiguration(false);
-
 		this.log.info(`Explanation`, tmpConfigurationExplanation);
-
-		if (typeof (fCallback) == 'function')
-		{
-			return fCallback();
-		}
 	};
 }
 

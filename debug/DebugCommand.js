@@ -12,14 +12,9 @@ class HarnessDebugCommand extends libCLICommandLineCommand
 		this.addCommand();
 	}
 
-	run(pOptions, pCommand, fCallback)
+	onRun(pOptions, pCommand)
 	{
 		this.log.info(`Executing the kobayashi maru.`);
-
-		if (typeof(fCallback) == 'function')
-		{
-			return fCallback();
-		}
 	};
 }
 

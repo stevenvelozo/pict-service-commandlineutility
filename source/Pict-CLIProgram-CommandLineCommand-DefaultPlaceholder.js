@@ -13,16 +13,11 @@ class PlaceholderCommand extends libCommandLineCommand
 		this.addCommand();
 	}
 
-	run(pOptions, pCommand, fCallback)
+	onRun(pOptions, pCommand)
 	{
 		// Execute the command
 		this.log.info(`Running placeholder command...`);
 		this.log.info(`...placeholder command succesfully executed!`);
-
-		if (typeof (fCallback) == 'function')
-		{
-			return fCallback();
-		}
 	};
 }
 
