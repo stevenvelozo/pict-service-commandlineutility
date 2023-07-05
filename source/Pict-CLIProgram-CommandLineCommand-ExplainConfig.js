@@ -10,7 +10,7 @@ class ExplainConfigCommand extends libCommandLineCommand
 		this.addCommand();
 	}
 
-	onRun(pOptions, pCommand)
+	onRun()
 	{
 		// Execute the command
 		this.log.info(`Gathering and explaining configuration...`);

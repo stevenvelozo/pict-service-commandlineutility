@@ -25,4 +25,6 @@ let _Program = new libCLIProgram(_ProgramConfiguration,
 		require('./DebugCommand.js')
 	]);
 
+_Program.LogNoisiness = 4;
+
 _Program.run();

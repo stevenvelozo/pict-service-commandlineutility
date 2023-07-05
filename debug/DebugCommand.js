@@ -12,7 +12,7 @@ class HarnessDebugCommand extends libCLICommandLineCommand
 		this.addCommand();
 	}
 
-	onRun(pOptions, pCommand)
+	onRun()
 	{
 		this.log.info(`Executing the kobayashi maru.`);
 	};

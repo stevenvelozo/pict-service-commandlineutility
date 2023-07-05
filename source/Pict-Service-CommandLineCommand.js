@@ -19,6 +19,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		let tmpOptions = Object.assign({}, JSON.parse(JSON.stringify(defaultCommandOptions)), pOptions);
 		super(pFable, tmpOptions, pServiceHash);
 
+		this.pict = this.fable;
 		this.AppData = this.fable.AppData;
 
 		this.serviceType = 'CommandLineCommand';
@@ -61,7 +62,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 				tmpCommand.option(tmpOption.Name, tmpOption.Description, tmpOption.Default);
 			}
 			//  .action((pString, pOptions) => { });
-			tmpCommand.action(this.runAsync.bind(this));
+			tmpCommand.action(this.runPromise.bind(this));
 		}
 		else
 		{
@@ -69,35 +70,35 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onBeforeRun(pArgumentString, pCommandOptions)
+	onBeforeRun()
 	{
 		if (this.pict.LogNoisiness > 3)
 		{
-			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onBeforeRun...`);
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} onBeforeRun...`);
 		}
 	}
 
-	onRun(pArgumentString, pCommandOptions)
+	onRun()
 	{
 		if (this.pict.LogNoisiness > 3)
 		{
-			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onRun...`);
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} onRun...`);
 		}
 	}
 
-	onAfterRun(pArgumentString, pCommandOptions)
+	onAfterRun()
 	{
 		if (this.pict.LogNoisiness > 3)
 		{
-			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} onAfterRun...`);
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} onAfterRun...`);
 		}
 	}
 
-	onBeforeRunAsync(pArgumentString, pCommandOptions, fCallback)
+	onBeforeRunAsync(fCallback)
 	{
 		try
 		{
-			let tmpResult = this.onBeforeRun(pArgumentString, pCommandOptions);
+			let tmpResult = this.onBeforeRun(this.ArgumentString, this.CommandOptions);
 			return fCallback(null, tmpResult);
 		}
 		catch(pError)
@@ -106,11 +107,11 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onRunAsync(pArgumentString, pCommandOptions, fCallback)
+	onRunAsync(fCallback)
 	{
 		try
 		{
-			let tmpResult = this.onRun(pArgumentString, pCommandOptions);
+			let tmpResult = this.onRun(this.ArgumentString, this.CommandOptions);
 			return fCallback(null, tmpResult);
 		}
 		catch(pError)
@@ -119,11 +120,11 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onAfterRunAsync(pArgumentString, pCommandOptions, fCallback)
+	onAfterRunAsync(fCallback)
 	{
 		try
 		{
-			let tmpResult = this.onAfterRun(pArgumentString, pCommandOptions);
+			let tmpResult = this.onAfterRun(this.ArgumentString, this.CommandOptions);
 			return fCallback(null, tmpResult);
 		}
 		catch(pError)
@@ -132,25 +133,28 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	async runAsync(pArgumentString, pCommandOptions, fCallback)
+	runAsync(pArgumentString, pCommandOptions, fCallback)
 	{
 		let tmpAnticipate = this.fable.serviceManager.instantiateServiceProviderWithoutRegistration('Anticipate');
 
 		if (this.pict.LogNoisiness > 2)
 		{
-			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} beginning async run...`);
+			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} beginning async run...`);
 		}
 
-		tmpAnticipate.anticipate(this.onBeforeRun.bind(this));
-		tmpAnticipate.anticipate(this.onRun.bind(this));
-		tmpAnticipate.anticipate(this.onAfterRun.bind(this));
+		this.ArgumentString = pArgumentString;
+		this.CommandOptions = pCommandOptions;
+
+		tmpAnticipate.anticipate(this.onBeforeRunAsync.bind(this));
+		tmpAnticipate.anticipate(this.onRunAsync.bind(this));
+		tmpAnticipate.anticipate(this.onAfterRunAsync.bind(this));
 
 		tmpAnticipate.wait(
 			(pError) =>
 			{
 				if (this.pict.LogNoisiness > 2)
 				{
-					this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.Name} async run completed.`);
+					this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} async run completed.`);
 				}
 				return fCallback(pError);
 			});
