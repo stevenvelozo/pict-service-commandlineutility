@@ -59,7 +59,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 				tmpCommand.option(tmpOption.Name, tmpOption.Description, tmpOption.Default);
 			}
 			//  .action((pString, pOptions) => { });
-			tmpCommand.action(this.run.bind(this));
+			tmpCommand.action(this.runAsync.bind(this));
 		}
 		else
 		{
@@ -67,12 +67,21 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	run(pArgumentString, pOptions, fCallback)
+	run(pArgumentString, pCommandOptions, fCallback)
 	{
-		// Execute the command
+		// The synchronous version of the command
 		return fCallback();
 	};
 
+	async runAsync(pArgumentString, pCommandOptions)
+	{
+		// Build an async function to wrap the non-async behavior by default
+		return new Promise(
+			(pResolve, pReject) =>
+			{
+				return this.run(pArgumentString, pCommandOptions, pResolve);
+			});
+	}
 }
 
 module.exports = CommandLineCommand;

@@ -59,7 +59,7 @@ class CommandLineUtility extends libPict.ServiceProviderBase
 
 	run (pParameterArray)
 	{
-		return this._Command.parse(pParameterArray);
+		return this._Command.parseAsync(pParameterArray);
 	}
 
 	get command()
