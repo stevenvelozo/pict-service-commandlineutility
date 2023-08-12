@@ -13,7 +13,7 @@ class PlaceholderCommand extends libCommandLineCommand
 		this.addCommand();
 	}
 
-	onRun(pOptions, pCommand)
+	onRun()
 	{
 		// Execute the command
 		this.log.info(`Running placeholder command...`);

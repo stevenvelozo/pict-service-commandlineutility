@@ -136,14 +136,47 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 	runAsync(pArgumentString, pCommandOptions, fCallback)
 	{
 		let tmpAnticipate = this.fable.serviceManager.instantiateServiceProviderWithoutRegistration('Anticipate');
+		let tmpCallback = fCallback;
 
 		if (this.pict.LogNoisiness > 2)
 		{
 			this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} beginning async run...`);
 		}
 
-		this.ArgumentString = pArgumentString;
-		this.CommandOptions = pCommandOptions;
+		// This is the most annoying thing about the commander library.
+		if ((typeof(pArgumentString) == 'string') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
+		{
+			this.ArgumentString = pArgumentString;
+			this.CommandOptions = pCommandOptions;
+		}
+		if ((typeof(pArgumentString) == 'object') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
+		{
+			this.ArgumentString = pArgumentString;
+			this.CommandOptions = pCommandOptions;
+		}
+		else if ((typeof(pArgumentString) == 'string') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
+		{
+			this.ArgumentString = pArgumentString;
+			this.CommandOptions = pCommandOptions;
+		}
+		else if ((typeof(pArgumentString) == 'object') && (typeof(pCommandOptions) == 'function'))
+		{
+			this.ArgumentString = '';
+			this.CommandOptions = pArgumentString;
+			tmpCallback = pCommandOptions;
+		}
+		else if (typeof(pArgumentString) == 'function')
+		{
+			this.ArgumentString = '';
+			this.CommandOptions = {};
+			tmpCallback = pArgumentString;
+		}
+		else
+		{
+			let tmpErrorMessage = `Could not synthesize command parameters; pArgumentString is ${typeof(pArgumentString)}, pCommandOptions is ${typeof(pCommandOptions)} and fCallback is ${typeof(fCallback)}`;
+			this.pict.log.error(tmpErrorMessage, {ArgumentString:pArgumentString, CommandOptions:pCommandOptions });
+			throw new Error(tmpErrorMessage);
+		}
 
 		tmpAnticipate.anticipate(this.onBeforeRunAsync.bind(this));
 		tmpAnticipate.anticipate(this.onRunAsync.bind(this));
@@ -156,7 +189,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 				{
 					this.log.trace(`PictCLI [${this.UUID}]::[${this.Hash}] ${this.options.CommandKeyword} async run completed.`);
 				}
-				return fCallback(pError);
+				return tmpCallback(pError);
 			});
 	}
 
@@ -175,7 +208,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 						}
 						return pResolve(pResult)
 					});
-			});		
+			});
 	}
 }
 
