@@ -33,7 +33,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 			let tmpCommandLineUtility = this.services.CommandLineUtility
 			if (typeof (tmpCommandLineUtility) === 'undefined')
 			{
-				tmpCommandLineUtility = this.fable.ServiceManager.instantiateService('CommandLineUtility');
+				tmpCommandLineUtility = this.fable.instantiateService('CommandLineUtility');
 			}
 
 			//_Command.command('command_keyword')
@@ -135,7 +135,7 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 
 	runAsync(pArgumentString, pCommandOptions, fCallback)
 	{
-		let tmpAnticipate = this.fable.serviceManager.instantiateServiceProviderWithoutRegistration('Anticipate');
+		let tmpAnticipate = this.fable.instantiateServiceProviderWithoutRegistration('Anticipate');
 		let tmpCallback = fCallback;
 
 		if (this.pict.LogNoisiness > 2)

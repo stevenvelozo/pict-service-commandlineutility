@@ -28,9 +28,9 @@ class CLIProgram extends libPict
 		super(pSettings);
 
 		// The CLI Program requires file persistence functionality to load configurations
-		this.serviceManager.instantiateServiceProvider('FilePersistence');
+		this.instantiateServiceProvider('FilePersistence');
 
-		this.serviceManager.addServiceType('CommandLineUtility', libServiceCommandLineUtility);
+		this.addServiceType('CommandLineUtility', libServiceCommandLineUtility);
 
 		if (!this.settings.hasOwnProperty('ProgramConfigurationFileName'))
 		{
@@ -38,7 +38,7 @@ class CLIProgram extends libPict
 		}
 
 		// Instantiate the Command Line Utility service
-		this.serviceManager.instantiateServiceProvider('CommandLineUtility',
+		this.instantiateServiceProvider('CommandLineUtility',
 		{
 			"Command": this.settings.Command,
 			"Description": this.settings.Description,

@@ -18,7 +18,7 @@ class CommandLineUtility extends libPict.ServiceProviderBase
 		this.serviceType = 'CommandLineUtility';
 
 		// Add the CommandLineCommand service
-		this.fable.serviceManager.addServiceType('CommandLineCommand', require('./Pict-Service-CommandLineCommand.js'));
+		this.fable.addServiceType('CommandLineCommand', require('./Pict-Service-CommandLineCommand.js'));
 
 		this._Command = new libCommander();
 
@@ -42,11 +42,11 @@ class CommandLineUtility extends libPict.ServiceProviderBase
 
 		if (typeof(pPrototype) != 'undefined')
 		{
-			return this.fable.serviceManager.instantiateServiceProviderFromPrototype('CommandLineCommand', tmpOptions, tmpViewHash, pPrototype);
+			return this.fable.instantiateServiceProviderFromPrototype('CommandLineCommand', tmpOptions, tmpViewHash, pPrototype);
 		}
 		else
 		{
-			return this.fable.serviceManager.instantiateServiceProvider('CommandLineCommand', tmpOptions, tmpViewHash);
+			return this.fable.instantiateServiceProvider('CommandLineCommand', tmpOptions, tmpViewHash);
 		}
 	}
 
@@ -54,7 +54,7 @@ class CommandLineUtility extends libPict.ServiceProviderBase
 	addCommandFromClass(pPrototype, pHash)
 	{
 		let tmpHash = (typeof(pHash) == 'string') ? pHash : this.fable.getUUID();
-		return this.fable.serviceManager.instantiateServiceProviderFromPrototype('CommandLineCommand', {}, tmpHash, pPrototype);
+		return this.fable.instantiateServiceProviderFromPrototype('CommandLineCommand', {}, tmpHash, pPrototype);
 	}
 
 	run (pParameterArray)
