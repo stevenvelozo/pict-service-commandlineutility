@@ -1,30 +1,16 @@
-const libCLIProgram = require('../source/Pict-CLIProgram-CommandLineUtility.js');
+const libDebug = require('./DebugProgram.js');
+libDebug.run(['node', 'Harness.js', 'kobayashi']);
 
-const _ProgramConfiguration = (
-	{
-		Product: 'Pict CLI Utility',
-		Version: '0.0.1',
-		
-		Command: 'Harness',
-		Description: 'Pict CLI Program Debug Harness',
+//const libDebug = require('../example_program/Pict-CLI-Example-Program.js');
+//libDebug.run(['node', 'Harness.js', 'name']);
+//libDebug.run(['node', 'Harness.js', 'names', '-c', '40']);
+//libDebug.run(['node', 'Harness.js', 'numbers', '4']);
 
-		ProgramConfigurationFileName: '.pict-cli-debugharness-config.json',
+//libDebug.run(['node', 'Harness.js', 'clr', '-p', '[CoLoR] >> ', '5']);
+//libDebug.run(['node', 'Harness.js', 'clr', '5']);
 
-		DefaultProgramConfiguration:
-			{
-				UserID: 'TestUser',
-				Password: 'TestPassword'
-			},
+// These work with any standard utility
 
-		AutoGatherProgramConfiguration: true,
-		AutoAddConfigurationExplanationCommand: true
-	});
-
-let _Program = new libCLIProgram(_ProgramConfiguration,
-	[
-		require('./DebugCommand.js')
-	]);
-
-_Program.LogNoisiness = 4;
-
-_Program.run();
+//libDebug.run(['node', 'Harness.js']);
+//libDebug.run(['node', 'Harness.js', 'explain-config']);
+//libDebug.run(['node', 'Harness.js', '-v']);

@@ -13,12 +13,16 @@ const _PictCLIProgram = new libCLIProgram(
 
 		// The following lines are optional, but allow a program to have "cascading" configurations and command-line explanations for this cascading.
 		ProgramConfigurationFileName: '.example.json',
+
 		AutoGatherProgramConfiguration: true,
 		AutoAddConfigurationExplanationCommand: true
 	},
 	[
 		// Each of these require statements provide a single isolated "command" to the CLI program.
+		require('./Pict-CLI-Example-Command-GenerateName.js'),
 		require('./Pict-CLI-Example-Command-GenerateNames.js'),
 		require('./Pict-CLI-Example-Command-GenerateNumbers.js'),
-		require('./Pict-CLI-Example-Command-CountSymbols.js')
+		require('./Pict-CLI-Example-Command-GenerateColors.js')
 	]);
+
+module.exports = _PictCLIProgram;

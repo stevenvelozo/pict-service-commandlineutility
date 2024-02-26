@@ -7,13 +7,15 @@ class CommandGenerateNames extends libCommandLineCommand
 		super(pFable, pManifest, pServiceHash);
 
 		// This is what the command uses to register itself with the base utility app
-		this.options.CommandKeyword = 'names';
+		this.options.CommandKeyword = 'colors';
 
-		this.options.Description = 'Generate a set of names.';
+		this.options.Description = 'Generate a set of colors.';
 
-		this.options.CommandOptions.push({ Name: '-c, --count [count]', Description: 'How many names to generate', Default: 15});
+		this.options.CommandArguments.push({ Name: '<number_count>', Description: 'How many colors to generate.' });
 
-		this.options.Aliases.push('nms');
+		this.options.CommandOptions.push({ Name: '-p, --prefix [prefix]', Description: 'Prefix text.', Default: ''});
+
+		this.options.Aliases.push('clr');
 
 		this.addCommand();
 	}
@@ -27,10 +29,11 @@ class CommandGenerateNames extends libCommandLineCommand
 	{
 		//this.fable.log.info('Generating names...');
 		let tmpDataGeneration = this.pict.instantiateServiceProvider('DataGeneration');
+		let tmpPrefix = (this.CommandOptions.prefix) ? this.CommandOptions.prefix : '';
 
-		for (let i = 0; i < this.CommandOptions.count; i++)
+		for (let i = 0; i < this.ArgumentString; i++)
 		{
-			console.log(`${tmpDataGeneration.randomName()} ${tmpDataGeneration.randomSurname()}`);
+			console.log(`${tmpPrefix}${tmpDataGeneration.randomColor()}`);
 		}
 		//this.fable.log.info('...names generated.');
 	}

@@ -47,7 +47,6 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 				tmpCommand.alias(tmpAlias);
 			}
 
-
 			//  .argument('[config]', 'optional hash of the configuration you want to run -- otherwise all are built', "ALL")
 			for (let i = 0; i < this.options.CommandArguments.length; i++)
 			{
@@ -144,32 +143,62 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 
 		// This is the most annoying thing about the commander library.
-		if ((typeof(pArgumentString) == 'string') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
-		{
-			this.ArgumentString = pArgumentString;
-			this.CommandOptions = pCommandOptions;
-		}
-		if ((typeof(pArgumentString) == 'object') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
-		{
-			this.ArgumentString = pArgumentString;
-			this.CommandOptions = pCommandOptions;
-		}
-		else if ((typeof(pArgumentString) == 'string') && (typeof(pCommandOptions) == 'object') && (typeof(fCallback) == 'function'))
-		{
-			this.ArgumentString = pArgumentString;
-			this.CommandOptions = pCommandOptions;
-		}
-		else if ((typeof(pArgumentString) == 'object') && (typeof(pCommandOptions) == 'function'))
+		// NOTE:
+		// The parameters that are passed to this function vary based on the following:
+		// 1. If the command has an argument or not
+		// 2. If the command has options or not
+		// 3. If the command has defaults for the argument
+		// 4. If the command has defaults for the options
+		// 5. If the user passed values in for any of the options
+		// Because of that, we look for the callback function (the API is consistent with only a single function no matter what) and then we deal with the type for the argument string and the options.
+		if (typeof(pArgumentString) == 'function')
 		{
 			this.ArgumentString = '';
-			this.CommandOptions = pArgumentString;
+			this.CommandOptions = { "ArgumentObject": {} };
+			tmpCallback = pArgumentString;
+		}
+		else if (typeof(pCommandOptions) == 'function')
+		{
+			if (typeof(pArgumentString) == 'string')
+			{
+				this.ArgumentString = pArgumentString;
+				this.CommandOptions = { "ArgumentObject": {} };
+			}
+			else if (typeof(pArgumentString) == 'object')
+			{
+				this.ArgumentString = '';
+				this.CommandOptions = pArgumentString;
+				if (!pArgumentString.hasOwnProperty('ArgumentObject'))
+				{
+					this.CommandOptions.ArgumentObject = {};
+				}
+			}
+			else
+			{
+				// Not sure what to do -- it should be a string or an object?
+				this.ArgumentString = '';
+				this.CommandOptions = { "ArgumentObject": {} };
+			}
 			tmpCallback = pCommandOptions;
 		}
-		else if (typeof(pArgumentString) == 'function')
+		else if (typeof(fCallback) == 'function')
 		{
-			this.ArgumentString = '';
-			this.CommandOptions = {};
-			tmpCallback = pArgumentString;
+			if (typeof(pArgumentString) == 'string')
+			{
+				this.ArgumentString = pArgumentString;
+				this.CommandOptions = pCommandOptions;
+			}
+			else if (typeof(pArgumentString) == 'object')
+			{
+				this.ArgumentString = '';
+				this.CommandOptions = pArgumentString;
+				this.RawCommand = pCommandOptions;
+			}
+			else
+			{
+				this.ArgumentString = '';
+				this.CommandOptions = pCommandOptions;
+			}
 		}
 		else
 		{
