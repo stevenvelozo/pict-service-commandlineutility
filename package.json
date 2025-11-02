@@ -24,11 +24,11 @@
     },
     "homepage": "https://github.com/stevenvelozo/pict-service-commandlineutility#readme",
     "devDependencies": {
-        "quackage": "^1.0.32"
+        "quackage": "^1.0.44"
     },
     "dependencies": {
-        "commander": "^12.1.0",
-        "pict": "^1.0.213"
+        "commander": "^14.0.2",
+        "pict": "^1.0.322"
     },
     "mocha": {
         "diff": true,

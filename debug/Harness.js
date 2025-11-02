@@ -1,5 +1,5 @@
 const libDebug = require('./DebugProgram.js');
-libDebug.run(['node', 'Harness.js', 'kobayashi']);
+//libDebug.run(['node', 'Harness.js', 'kobayashi']);
 
 //const libDebug = require('../example_program/Pict-CLI-Example-Program.js');
 //libDebug.run(['node', 'Harness.js', 'name']);
@@ -12,5 +12,5 @@ libDebug.run(['node', 'Harness.js', 'kobayashi']);
 // These work with any standard utility
 
 //libDebug.run(['node', 'Harness.js']);
-//libDebug.run(['node', 'Harness.js', 'explain-config']);
+libDebug.run(['node', 'Harness.js', 'explain-config']);
 //libDebug.run(['node', 'Harness.js', '-v']);
