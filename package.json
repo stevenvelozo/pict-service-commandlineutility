@@ -1,6 +1,6 @@
 {
     "name": "pict-service-commandlineutility",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "description": "Pict Command-Line Utility Service",
     "main": "source/Pict-CLIProgram-CommandLineUtility.js",
     "scripts": {
@@ -24,11 +24,11 @@
     },
     "homepage": "https://github.com/stevenvelozo/pict-service-commandlineutility#readme",
     "devDependencies": {
-        "quackage": "^1.0.44"
+        "quackage": "^1.0.45"
     },
     "dependencies": {
         "commander": "^14.0.2",
-        "pict": "^1.0.322"
+        "pict": "^1.0.343"
     },
     "mocha": {
         "diff": true,
