@@ -10,6 +10,11 @@ const defaultCommandLineUtilityOptions = (
 
 class CommandLineUtility extends libPict.ServiceProviderBase
 {
+	/**
+	 * @param {import('pict')|Record<string, any>} [pFable] - (optional) The fable instance, or the options object if there is no fable
+	 * @param {Record<string, any>|string} [pOptions] - (optional) The options object, or the service hash if there is no fable
+	 * @param {string} [pServiceHash] - (optional) The service hash to identify this service instance
+	 */
 	constructor(pFable, pOptions, pServiceHash)
 	{
 		let tmpOptions = Object.assign({}, JSON.parse(JSON.stringify(defaultCommandLineUtilityOptions)), pOptions);

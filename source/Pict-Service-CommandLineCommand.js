@@ -13,6 +13,11 @@ const defaultCommandOptions = (
 
 class CommandLineCommand extends libPict.ServiceProviderBase
 {
+	/**
+	 * @param {import('pict')|Record<string, any>} [pFable] - (optional) The fable instance, or the options object if there is no fable
+	 * @param {Record<string, any>|string} [pOptions] - (optional) The options object, or the service hash if there is no fable
+	 * @param {string} [pServiceHash] - (optional) The service hash to identify this service instance
+	 */
 	constructor(pFable, pOptions, pServiceHash)
 	{
 		// Object.assign is recursive and pollutes middle objects in some environments.  UGH
@@ -69,7 +74,11 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onBeforeRun()
+	/**
+	 * @param {string} [pArgumentString] - The raw argument string passed to the command
+	 * @param {object} [pCommandOptions] - The command options object passed to the command
+	 */
+	onBeforeRun(pArgumentString, pCommandOptions)
 	{
 		if (this.pict.LogNoisiness > 3)
 		{
@@ -77,7 +86,11 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onRun()
+	/**
+	 * @param {string} [pArgumentString] - The raw argument string passed to the command
+	 * @param {object} [pCommandOptions] - The command options object passed to the command
+	 */
+	onRun(pArgumentString, pCommandOptions)
 	{
 		if (this.pict.LogNoisiness > 3)
 		{
@@ -85,7 +98,11 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 		}
 	}
 
-	onAfterRun()
+	/**
+	 * @param {string} [pArgumentString] - The raw argument string passed to the command
+	 * @param {object} [pCommandOptions] - The command options object passed to the command
+	 */
+	onAfterRun(pArgumentString, pCommandOptions)
 	{
 		if (this.pict.LogNoisiness > 3)
 		{

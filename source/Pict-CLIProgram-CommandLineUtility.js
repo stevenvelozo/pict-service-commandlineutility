@@ -22,6 +22,10 @@ const defaultCommandLineUtilityOptions = (
 
 class CLIProgram extends libPict
 {
+	/**
+	 * @param {Record<string, any>|string} [pSettings] - (optional) The options object, or the service hash if there is no fable
+	 * @param {Array<import('./Pict-Service-CommandLineCommand.js')>} [pCommands] - (optional) An array of command prototypes to add to the command line utility
+	 */
 	constructor(pSettings, pCommands)
 	{
 		let tmpSettings = Object.assign({}, JSON.parse(JSON.stringify(defaultCommandLineUtilityOptions)), pSettings);
@@ -44,6 +48,9 @@ class CLIProgram extends libPict
 			"Description": this.settings.Description,
 			"Version": this.settings.Version
 		});
+
+		/** @type {libServiceCommandLineUtility} */
+		this.CommandLineUtility;
 
 		if (this.settings.AutoGatherProgramConfiguration)
 		{
@@ -96,7 +103,7 @@ class CLIProgram extends libPict
 		let tmpNewConfiguration = {};
 		let tmpConfigurationExplanation = (
 			{
-				ConfigurationOutcome: false,
+				ConfigurationOutcome: null,
 				GatherPhases: []
 			});
 

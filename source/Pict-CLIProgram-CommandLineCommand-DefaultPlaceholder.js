@@ -2,6 +2,11 @@ const libCommandLineCommand = require('./Pict-Service-CommandLineCommand.js');
 
 class PlaceholderCommand extends libCommandLineCommand
 {
+	/**
+	 * @param {import('pict')|Record<string, any>} [pFable] - (optional) The fable instance, or the options object if there is no fable
+	 * @param {Record<string, any>|string} [pManifest] - (optional) The options object, or the service hash if there is no fable
+	 * @param {string} [pServiceHash] - (optional) The service hash to identify this service instance
+	 */
 	constructor(pFable, pManifest, pServiceHash)
 	{
 		super(pFable, pManifest, pServiceHash);
