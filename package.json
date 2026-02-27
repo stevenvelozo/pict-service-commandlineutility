@@ -7,7 +7,7 @@
         "test": "npx mocha -u tdd -R spec",
         "start": "node source/Pict-CLIProgram-Runner.js",
         "tests": "npx mocha -u tdd --exit -R spec --grep",
-        "coverage": "npx nyc --reporter=lcov --reporter=text-lcov ./node_modules/mocha/bin/_mocha -- -u tdd -R spec",
+        "coverage": "npx quack coverage",
         "build": "npx quack build",
         "docker-dev-build": "docker build ./ -f Dockerfile_LUXURYCode -t pict-service-commandlineutility-image:local",
         "docker-dev-run": "docker run -it -d --name pict-service-commandlineutility-dev -p 48068:8080 -p 37276:8086 -v \"$PWD/.config:/home/coder/.config\"  -v \"$PWD:/home/coder/pict-service-commandlineutility\" -u \"$(id -u):$(id -g)\" -e \"DOCKER_USER=$USER\" pict-service-commandlineutility-image:local",
