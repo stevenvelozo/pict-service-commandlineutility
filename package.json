@@ -29,7 +29,7 @@
     "devDependencies": {
         "@types/mocha": "^10.0.10",
         "@types/node": "^16.18.126",
-        "quackage": "^1.0.47",
+        "quackage": "^1.0.58",
         "typescript": "^5.9.3"
     },
     "dependencies": {
