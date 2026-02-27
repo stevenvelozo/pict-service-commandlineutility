@@ -1,6 +1,6 @@
 {
     "name": "pict-service-commandlineutility",
-    "version": "1.0.18",
+    "version": "1.0.19",
     "description": "Pict Command-Line Utility Service",
     "main": "source/Pict-CLIProgram-CommandLineUtility.js",
     "scripts": {
@@ -34,8 +34,8 @@
     },
     "dependencies": {
         "commander": "^14.0.2",
-        "fable-serviceproviderbase": "^3.0.16",
-        "pict": "^1.0.345"
+        "fable-serviceproviderbase": "^3.0.19",
+        "pict": "^1.0.355"
     },
     "mocha": {
         "diff": true,
