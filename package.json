@@ -29,6 +29,7 @@
     "devDependencies": {
         "@types/mocha": "^10.0.10",
         "@types/node": "^16.18.126",
+        "pict-docuserve": "^0.1.5",
         "quackage": "^1.1.0",
         "typescript": "^5.9.3"
     },
