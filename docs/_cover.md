@@ -1,4 +1,4 @@
-# Pict-Service-CommandLineUtility <small>1</small>
+# Pict-Service-CommandLineUtility
 
 > Build command-line applications with Pict and Commander.js
 
