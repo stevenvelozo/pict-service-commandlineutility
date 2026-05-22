@@ -1,6 +1,7 @@
 {
-	"Generated": "2026-04-10T17:26:12.678Z",
-	"DocumentCount": 0,
+	"Generated": "2026-05-22T05:46:20.591Z",
+	"Mode": "module",
+	"DocumentCount": 5,
 	"LunrIndex": {
 		"version": "2.3.9",
 		"fields": [
@@ -9,11 +10,3042 @@
 			"group",
 			"body"
 		],
-		"fieldVectors": [],
-		"invertedIndex": [],
+		"fieldVectors": [
+			[
+				"title/README.md",
+				[
+					0,
+					3.799,
+					1,
+					3.799,
+					2,
+					3.546
+				]
+			],
+			[
+				"module/README.md",
+				[
+					0,
+					2.094,
+					1,
+					2.094,
+					2,
+					1.954
+				]
+			],
+			[
+				"group/README.md",
+				[]
+			],
+			[
+				"body/README.md",
+				[
+					0,
+					0.841,
+					1,
+					0.817,
+					2,
+					0.546,
+					3,
+					1.393,
+					4,
+					0.15,
+					5,
+					0.458,
+					6,
+					0.402,
+					7,
+					0.921,
+					8,
+					2.206,
+					9,
+					2.206,
+					10,
+					1.224,
+					11,
+					0.897,
+					12,
+					1.938,
+					13,
+					1.938,
+					14,
+					1.42,
+					15,
+					1.42,
+					16,
+					1.42,
+					17,
+					0.122,
+					18,
+					1.224,
+					19,
+					0.164,
+					20,
+					1.938,
+					21,
+					1.938,
+					22,
+					0.402,
+					23,
+					1.42,
+					24,
+					0.897,
+					25,
+					0.552,
+					26,
+					0.458,
+					27,
+					0.402,
+					28,
+					0.753,
+					29,
+					0.753,
+					30,
+					1.42,
+					31,
+					0.552,
+					32,
+					0.552,
+					33,
+					0.295,
+					34,
+					1.224,
+					35,
+					0.897,
+					36,
+					0.402,
+					37,
+					0.753,
+					38,
+					0.552,
+					39,
+					1.42,
+					40,
+					0.552,
+					41,
+					0.552,
+					42,
+					1.42,
+					43,
+					1.42,
+					44,
+					0.897,
+					45,
+					0.552,
+					46,
+					0.552,
+					47,
+					0.897,
+					48,
+					0.897,
+					49,
+					1.42,
+					50,
+					0.552,
+					51,
+					1.42,
+					52,
+					1.42,
+					53,
+					0.897,
+					54,
+					1.42,
+					55,
+					1.224,
+					56,
+					0.897,
+					57,
+					0.295,
+					58,
+					0.552,
+					59,
+					0.753,
+					60,
+					0.552,
+					61,
+					0.552,
+					62,
+					1.42,
+					63,
+					1.42,
+					64,
+					1.42,
+					65,
+					1.42,
+					66,
+					0.897,
+					67,
+					0.897,
+					68,
+					1.42
+				]
+			],
+			[
+				"title/_cover.md",
+				[
+					0,
+					3.799,
+					1,
+					3.799,
+					2,
+					3.546
+				]
+			],
+			[
+				"module/_cover.md",
+				[
+					0,
+					2.094,
+					1,
+					2.094,
+					2,
+					1.954
+				]
+			],
+			[
+				"group/_cover.md",
+				[]
+			],
+			[
+				"body/_cover.md",
+				[
+					0,
+					0.793,
+					1,
+					0.741,
+					2,
+					0.579,
+					3,
+					1.296,
+					4,
+					0.14,
+					5,
+					0.426,
+					6,
+					0.426,
+					7,
+					0.954,
+					17,
+					0.129,
+					19,
+					0.129,
+					24,
+					1.296,
+					25,
+					0.798,
+					27,
+					0.426,
+					28,
+					0.798,
+					29,
+					0.798,
+					32,
+					0.798,
+					33,
+					0.426,
+					34,
+					1.296,
+					35,
+					1.296,
+					36,
+					0.426,
+					37,
+					0.798,
+					38,
+					0.798,
+					50,
+					0.798,
+					69,
+					2.053
+				]
+			],
+			[
+				"title/api-reference.md",
+				[
+					59,
+					5.784,
+					60,
+					5.784
+				]
+			],
+			[
+				"module/api-reference.md",
+				[
+					0,
+					2.094,
+					1,
+					2.094,
+					2,
+					1.954
+				]
+			],
+			[
+				"group/api-reference.md",
+				[]
+			],
+			[
+				"body/api-reference.md",
+				[
+					0,
+					0.538,
+					1,
+					0.445,
+					2,
+					0.274,
+					4,
+					0.149,
+					5,
+					0.202,
+					6,
+					0.306,
+					7,
+					0.378,
+					11,
+					0.614,
+					17,
+					0.061,
+					19,
+					0.125,
+					22,
+					0.412,
+					25,
+					0.378,
+					26,
+					0.37,
+					27,
+					0.306,
+					31,
+					0.573,
+					33,
+					0.202,
+					36,
+					0.37,
+					37,
+					0.573,
+					40,
+					0.773,
+					44,
+					0.614,
+					45,
+					0.692,
+					46,
+					0.378,
+					55,
+					0.614,
+					57,
+					0.412,
+					58,
+					0.831,
+					59,
+					0.573,
+					60,
+					0.573,
+					61,
+					0.692,
+					66,
+					0.614,
+					67,
+					1.255,
+					70,
+					0.972,
+					71,
+					1.255,
+					72,
+					0.614,
+					73,
+					1.255,
+					74,
+					1.16,
+					75,
+					1.474,
+					76,
+					1.255,
+					77,
+					0.831,
+					78,
+					1.42,
+					79,
+					2.136,
+					80,
+					2.136,
+					81,
+					1.474,
+					82,
+					1.124,
+					83,
+					0.972,
+					84,
+					1.255,
+					85,
+					0.614,
+					86,
+					0.972,
+					87,
+					0.972,
+					88,
+					0.614,
+					89,
+					1.474,
+					90,
+					0.972,
+					91,
+					0.573,
+					92,
+					0.972,
+					93,
+					1.474,
+					94,
+					0.972,
+					95,
+					1.255,
+					96,
+					0.614,
+					97,
+					0.931,
+					98,
+					0.931,
+					99,
+					1.255,
+					100,
+					0.931,
+					101,
+					0.972,
+					102,
+					0.614,
+					103,
+					0.972,
+					104,
+					1.124,
+					105,
+					0.972,
+					106,
+					1.781,
+					107,
+					0.972,
+					108,
+					0.972,
+					109,
+					0.972,
+					110,
+					0.972,
+					111,
+					1.124,
+					112,
+					0.972,
+					113,
+					0.972,
+					114,
+					0.972,
+					115,
+					0.972,
+					116,
+					0.972,
+					117,
+					1.474,
+					118,
+					0.972,
+					119,
+					0.972,
+					120,
+					0.972,
+					121,
+					0.972,
+					122,
+					0.972,
+					123,
+					0.972,
+					124,
+					0.972,
+					125,
+					0.378,
+					126,
+					0.972,
+					127,
+					0.972,
+					128,
+					0.972,
+					129,
+					0.972,
+					130,
+					0.972,
+					131,
+					0.614,
+					132,
+					0.972
+				]
+			],
+			[
+				"title/configuration.md",
+				[
+					19,
+					0.934,
+					57,
+					3.087
+				]
+			],
+			[
+				"module/configuration.md",
+				[
+					0,
+					2.094,
+					1,
+					2.094,
+					2,
+					1.954
+				]
+			],
+			[
+				"group/configuration.md",
+				[]
+			],
+			[
+				"body/configuration.md",
+				[
+					0,
+					0.538,
+					1,
+					0.38,
+					2,
+					0.354,
+					4,
+					0.127,
+					5,
+					0.261,
+					17,
+					0.112,
+					18,
+					0.794,
+					19,
+					0.177,
+					22,
+					0.261,
+					29,
+					0.489,
+					31,
+					0.923,
+					32,
+					0.489,
+					33,
+					0.429,
+					41,
+					0.489,
+					46,
+					0.489,
+					47,
+					0.794,
+					48,
+					0.794,
+					50,
+					0.489,
+					53,
+					0.794,
+					57,
+					0.467,
+					73,
+					1.124,
+					74,
+					1.156,
+					76,
+					0.794,
+					77,
+					0.692,
+					78,
+					1.124,
+					82,
+					0.794,
+					84,
+					1.42,
+					85,
+					1.124,
+					88,
+					1.124,
+					91,
+					0.489,
+					95,
+					1.498,
+					97,
+					1.42,
+					100,
+					1.124,
+					104,
+					0.794,
+					111,
+					0.794,
+					125,
+					0.489,
+					133,
+					1.257,
+					134,
+					1.257,
+					135,
+					1.257,
+					136,
+					1.257,
+					137,
+					1.257,
+					138,
+					1.257,
+					139,
+					1.257,
+					140,
+					1.257,
+					141,
+					1.257,
+					142,
+					1.257,
+					143,
+					1.257,
+					144,
+					1.257,
+					145,
+					1.257,
+					146,
+					1.124,
+					147,
+					1.257,
+					148,
+					1.257,
+					149,
+					1.257,
+					150,
+					1.78,
+					151,
+					2.067,
+					152,
+					1.257,
+					153,
+					1.257,
+					154,
+					1.257,
+					155,
+					0.794,
+					156,
+					2.067,
+					157,
+					1.257,
+					158,
+					1.257,
+					159,
+					1.257,
+					160,
+					1.78,
+					161,
+					1.78,
+					162,
+					1.257,
+					163,
+					1.257,
+					164,
+					1.257,
+					165,
+					1.257,
+					166,
+					1.257,
+					167,
+					1.257
+				]
+			],
+			[
+				"title/creating-commands.md",
+				[
+					4,
+					0.795,
+					26,
+					3.087
+				]
+			],
+			[
+				"module/creating-commands.md",
+				[
+					0,
+					2.094,
+					1,
+					2.094,
+					2,
+					1.954
+				]
+			],
+			[
+				"group/creating-commands.md",
+				[]
+			],
+			[
+				"body/creating-commands.md",
+				[
+					0,
+					0.658,
+					1,
+					0.658,
+					4,
+					0.154,
+					6,
+					0.351,
+					10,
+					1.069,
+					17,
+					0.106,
+					22,
+					0.351,
+					26,
+					0.499,
+					27,
+					0.452,
+					28,
+					0.988,
+					36,
+					0.452,
+					38,
+					0.658,
+					40,
+					0.658,
+					41,
+					0.658,
+					45,
+					0.936,
+					56,
+					1.069,
+					58,
+					0.847,
+					61,
+					0.658,
+					71,
+					1.52,
+					72,
+					1.069,
+					74,
+					1.129,
+					77,
+					0.658,
+					91,
+					0.658,
+					96,
+					1.069,
+					98,
+					1.069,
+					99,
+					1.375,
+					102,
+					1.069,
+					125,
+					0.658,
+					131,
+					1.069,
+					146,
+					1.069,
+					155,
+					1.069,
+					168,
+					1.693,
+					169,
+					1.693,
+					170,
+					1.693,
+					171,
+					1.693,
+					172,
+					2.177,
+					173,
+					1.693,
+					174,
+					1.693
+				]
+			]
+		],
+		"invertedIndex": [
+			[
+				"",
+				{
+					"_index": 74,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"0.0.1",
+				{
+					"_index": 163,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"accept",
+				{
+					"_index": 171,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"access",
+				{
+					"_index": 17,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"add",
+				{
+					"_index": 91,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"addcommand",
+				{
+					"_index": 114,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"addcommandfromclass(pcommandclass",
+				{
+					"_index": 126,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"addconfigurationexplanationcommand",
+				{
+					"_index": 90,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"alias",
+				{
+					"_index": 172,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"allow",
+				{
+					"_index": 145,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"altern",
+				{
+					"_index": 101,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"api",
+				{
+					"_index": 59,
+					"title": {
+						"api-reference.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"appli",
+				{
+					"_index": 87,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"applic",
+				{
+					"_index": 6,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"appropri",
+				{
+					"_index": 130,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"architectur",
+				{
+					"_index": 15,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"argument",
+				{
+					"_index": 36,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"array",
+				{
+					"_index": 79,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"async",
+				{
+					"_index": 40,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"asynchron",
+				{
+					"_index": 44,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"auto",
+				{
+					"_index": 167,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"automat",
+				{
+					"_index": 30,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"base",
+				{
+					"_index": 66,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"basic",
+				{
+					"_index": 169,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"befor",
+				{
+					"_index": 98,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"behavior",
+				{
+					"_index": 53,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"boolean",
+				{
+					"_index": 85,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"both",
+				{
+					"_index": 42,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"build",
+				{
+					"_index": 3,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {}
+					}
+				}
+			],
+			[
+				"built",
+				{
+					"_index": 34,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {}
+					}
+				}
+			],
+			[
+				"call",
+				{
+					"_index": 99,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"came",
+				{
+					"_index": 48,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"cascad",
+				{
+					"_index": 29,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"class",
+				{
+					"_index": 67,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"cleanup",
+				{
+					"_index": 109,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"cli",
+				{
+					"_index": 22,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"cliprogram",
+				{
+					"_index": 70,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"command",
+				{
+					"_index": 4,
+					"title": {
+						"creating-commands.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"commander.j",
+				{
+					"_index": 7,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"commandlineutil",
+				{
+					"_index": 2,
+					"title": {
+						"README.md": {},
+						"_cover.md": {}
+					},
+					"module": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"complet",
+				{
+					"_index": 61,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"config",
+				{
+					"_index": 88,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"configur",
+				{
+					"_index": 19,
+					"title": {
+						"configuration.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"constructor",
+				{
+					"_index": 73,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"core",
+				{
+					"_index": 64,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"cover",
+				{
+					"_index": 168,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"creat",
+				{
+					"_index": 26,
+					"title": {
+						"creating-commands.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"createcommand(pkeyword",
+				{
+					"_index": 127,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"custom",
+				{
+					"_index": 147,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"cwd",
+				{
+					"_index": 140,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"cwd/.config",
+				{
+					"_index": 141,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"data",
+				{
+					"_index": 20,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"debug",
+				{
+					"_index": 158,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"default",
+				{
+					"_index": 84,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"default_command",
+				{
+					"_index": 164,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"defaultprogramconfigur",
+				{
+					"_index": 136,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"defin",
+				{
+					"_index": 52,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"definit",
+				{
+					"_index": 25,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"descript",
+				{
+					"_index": 77,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"differ",
+				{
+					"_index": 148,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"document",
+				{
+					"_index": 55,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"each",
+				{
+					"_index": 155,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"earlier",
+				{
+					"_index": 143,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"enabl",
+				{
+					"_index": 150,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"exampl",
+				{
+					"_index": 131,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"execut",
+				{
+					"_index": 45,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"explain",
+				{
+					"_index": 47,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"explan",
+				{
+					"_index": 46,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"extend",
+				{
+					"_index": 72,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"fabl",
+				{
+					"_index": 68,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"fcallback",
+				{
+					"_index": 118,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"featur",
+				{
+					"_index": 23,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"file",
+				{
+					"_index": 151,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"flag",
+				{
+					"_index": 170,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"folder",
+				{
+					"_index": 139,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"format",
+				{
+					"_index": 152,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"framework",
+				{
+					"_index": 9,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"full",
+				{
+					"_index": 38,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"gather",
+				{
+					"_index": 31,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"gatherprogramconfiguration(pautoapplyconfigur",
+				{
+					"_index": 83,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"gener",
+				{
+					"_index": 21,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"github",
+				{
+					"_index": 69,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"_cover.md": {}
+					}
+				}
+			],
+			[
+				"give",
+				{
+					"_index": 16,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"guid",
+				{
+					"_index": 56,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"help",
+				{
+					"_index": 157,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"home",
+				{
+					"_index": 138,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"hook",
+				{
+					"_index": 28,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"initi",
+				{
+					"_index": 166,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"instal",
+				{
+					"_index": 51,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"instanc",
+				{
+					"_index": 94,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"integr",
+				{
+					"_index": 13,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"intern",
+				{
+					"_index": 123,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"issu",
+				{
+					"_index": 159,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"json",
+				{
+					"_index": 153,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"keyword",
+				{
+					"_index": 165,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"later",
+				{
+					"_index": 142,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"level",
+				{
+					"_index": 149,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"librari",
+				{
+					"_index": 12,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"lifecycl",
+				{
+					"_index": 27,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"line",
+				{
+					"_index": 5,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"locat",
+				{
+					"_index": 133,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"log",
+				{
+					"_index": 18,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"logic",
+				{
+					"_index": 106,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"main",
+				{
+					"_index": 71,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"manual",
+				{
+					"_index": 160,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"method",
+				{
+					"_index": 80,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"multipl",
+				{
+					"_index": 32,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"name",
+				{
+					"_index": 100,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"new",
+				{
+					"_index": 129,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"object",
+				{
+					"_index": 78,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"on",
+				{
+					"_index": 144,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"onafterrun",
+				{
+					"_index": 108,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"onafterrunasync(fcallback",
+				{
+					"_index": 113,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"onbeforerun",
+				{
+					"_index": 103,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"onbeforerunasync(fcallback",
+				{
+					"_index": 110,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"onrun",
+				{
+					"_index": 107,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"onrunasync(fcallback",
+				{
+					"_index": 112,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"option",
+				{
+					"_index": 58,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"order",
+				{
+					"_index": 134,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"overrid",
+				{
+					"_index": 104,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"packag",
+				{
+					"_index": 63,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"paramet",
+				{
+					"_index": 75,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"pars",
+				{
+					"_index": 37,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"pass",
+				{
+					"_index": 96,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"pcommandopt",
+				{
+					"_index": 117,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"pdescript",
+				{
+					"_index": 128,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"pict",
+				{
+					"_index": 0,
+					"title": {
+						"README.md": {},
+						"_cover.md": {}
+					},
+					"module": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"pict'",
+				{
+					"_index": 14,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"posit",
+				{
+					"_index": 102,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"preced",
+				{
+					"_index": 135,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"product",
+				{
+					"_index": 162,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"program",
+				{
+					"_index": 57,
+					"title": {
+						"configuration.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"programconfigur",
+				{
+					"_index": 137,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"promis",
+				{
+					"_index": 120,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"properti",
+				{
+					"_index": 93,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"provid",
+				{
+					"_index": 8,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"quick",
+				{
+					"_index": 49,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"refer",
+				{
+					"_index": 60,
+					"title": {
+						"api-reference.md": {}
+					},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"regist",
+				{
+					"_index": 115,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"relat",
+				{
+					"_index": 62,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"resolv",
+				{
+					"_index": 121,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"return",
+				{
+					"_index": 89,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"robust",
+				{
+					"_index": 35,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {}
+					}
+				}
+			],
+			[
+				"run",
+				{
+					"_index": 82,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"run(pargumentstr",
+				{
+					"_index": 81,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"runasync(pargumentstr",
+				{
+					"_index": 116,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"runpromise(pargumentstr",
+				{
+					"_index": 119,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"servic",
+				{
+					"_index": 1,
+					"title": {
+						"README.md": {},
+						"_cover.md": {}
+					},
+					"module": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"servicecommandlinecommand",
+				{
+					"_index": 92,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"servicecommandlineutil",
+				{
+					"_index": 122,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"serviceproviderbas",
+				{
+					"_index": 65,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"set",
+				{
+					"_index": 97,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"setup",
+				{
+					"_index": 105,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"show",
+				{
+					"_index": 154,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"simpl",
+				{
+					"_index": 24,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {}
+					}
+				}
+			],
+			[
+				"sourc",
+				{
+					"_index": 33,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"start",
+				{
+					"_index": 50,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"_cover.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"string",
+				{
+					"_index": 95,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"support",
+				{
+					"_index": 41,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"synchron",
+				{
+					"_index": 43,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"templat",
+				{
+					"_index": 39,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"three",
+				{
+					"_index": 173,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"through",
+				{
+					"_index": 54,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {}
+					}
+				}
+			],
+			[
+				"type",
+				{
+					"_index": 76,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"us",
+				{
+					"_index": 10,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"usag",
+				{
+					"_index": 132,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"user",
+				{
+					"_index": 146,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"usual",
+				{
+					"_index": 124,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"util",
+				{
+					"_index": 161,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"valu",
+				{
+					"_index": 156,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"variant",
+				{
+					"_index": 174,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"version",
+				{
+					"_index": 111,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {}
+					}
+				}
+			],
+			[
+				"via",
+				{
+					"_index": 125,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {},
+						"configuration.md": {},
+						"creating-commands.md": {}
+					}
+				}
+			],
+			[
+				"whether",
+				{
+					"_index": 86,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"api-reference.md": {}
+					}
+				}
+			],
+			[
+				"wrap",
+				{
+					"_index": 11,
+					"title": {},
+					"module": {},
+					"group": {},
+					"body": {
+						"README.md": {},
+						"api-reference.md": {}
+					}
+				}
+			]
+		],
 		"pipeline": [
 			"stemmer"
 		]
 	},
-	"Documents": {}
+	"Documents": {
+		"README.md": {
+			"Title": "Pict-Service-CommandLineUtility",
+			"Module": "pict-service-commandlineutility",
+			"Group": "",
+			"DocPath": "README.md"
+		},
+		"_cover.md": {
+			"Title": "Pict-Service-CommandLineUtility",
+			"Module": "pict-service-commandlineutility",
+			"Group": "",
+			"DocPath": "_cover.md"
+		},
+		"api-reference.md": {
+			"Title": "API Reference",
+			"Module": "pict-service-commandlineutility",
+			"Group": "",
+			"DocPath": "api-reference.md"
+		},
+		"configuration.md": {
+			"Title": "Program Configuration",
+			"Module": "pict-service-commandlineutility",
+			"Group": "",
+			"DocPath": "configuration.md"
+		},
+		"creating-commands.md": {
+			"Title": "Creating Commands",
+			"Module": "pict-service-commandlineutility",
+			"Group": "",
+			"DocPath": "creating-commands.md"
+		}
+	}
 }
