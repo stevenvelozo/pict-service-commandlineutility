@@ -18,14 +18,14 @@
     "types": "types/Pict-CLIProgram-CommandLineUtility.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/stevenvelozo/pict-service-commandlineutility.git"
+        "url": "git+https://github.com/fable-retold/pict-service-commandlineutility.git"
     },
     "author": "steven velozo <steven@velozo.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/stevenvelozo/pict-service-commandlineutility/issues"
+        "url": "https://github.com/fable-retold/pict-service-commandlineutility/issues"
     },
-    "homepage": "https://github.com/stevenvelozo/pict-service-commandlineutility#readme",
+    "homepage": "https://github.com/fable-retold/pict-service-commandlineutility#readme",
     "devDependencies": {
         "@types/mocha": "^10.0.10",
         "@types/node": "^16.18.126",

@@ -7,5 +7,5 @@
 - Built on Commander.js for robust argument parsing
 - Full access to Pict services in every command
 
-[GitHub](https://github.com/stevenvelozo/pict-service-commandlineutility)
+[GitHub](https://github.com/fable-retold/pict-service-commandlineutility)
 [Get Started](#pict-service-commandlineutility)
