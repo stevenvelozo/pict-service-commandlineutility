@@ -74,7 +74,7 @@ module.exports = HelloCommand;
 
 ## Related Packages
 
-- [pict](https://github.com/fable-retold/pict) - Core Pict framework
-- [pict-serviceproviderbase](https://github.com/fable-retold/pict-serviceproviderbase) - Service provider base class
-- [fable](https://github.com/fable-retold/fable) - Service provider framework
+- [pict](https://fable-retold.github.io/pict/) - Core Pict framework
+- [pict-serviceproviderbase](https://fable-retold.github.io/pict-serviceproviderbase/) - Service provider base class
+- [fable](https://fable-retold.github.io/fable/) - Service provider framework
 - [commander](https://github.com/tj/commander.js) - Command-line argument parsing
