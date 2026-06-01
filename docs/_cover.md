@@ -4,7 +4,7 @@
 
 - Simple command definition with lifecycle hooks
 - Cascading configuration from multiple sources
-- Built on Commander.js for robust argument parsing
+- Built on Commander.js for argument parsing
 - Full access to Pict services in every command
 
 [GitHub](https://github.com/fable-retold/pict-service-commandlineutility)

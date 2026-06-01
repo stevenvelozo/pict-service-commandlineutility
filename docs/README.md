@@ -8,7 +8,7 @@ Pict-Service-CommandLineUtility provides a framework for building command-line a
 
 - **Simple Command Definition** - Create commands as Pict services with lifecycle hooks
 - **Cascading Configuration** - Automatically gather configuration from multiple sources
-- **Commander.js Integration** - Built on the robust Commander.js argument parsing library
+- **Commander.js Integration** - Built on the Commander.js argument parsing library
 - **Full Pict Access** - Use logging, templates, data generation, and all Pict services
 - **Async Support** - Both synchronous and asynchronous command execution
 - **Configuration Explanation** - Built-in command to explain where configuration came from
