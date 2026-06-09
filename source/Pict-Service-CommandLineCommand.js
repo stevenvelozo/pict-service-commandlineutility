@@ -239,13 +239,25 @@ class CommandLineCommand extends libPict.ServiceProviderBase
 			});
 	}
 
-	async runPromise(pArgumentString, pCommandOptions)
+	async runPromise(...pArguments)
 	{
+		// Commander invokes an action as (positional1, ..., positionalN, options, command).
+		// The old (pArgumentString, pCommandOptions) signature captured only the first two
+		// parameters, so for a command with two or more positional arguments the second
+		// positional landed in the options slot and every positional past the first was
+		// lost. Pull the options off the end (the command object is the final parameter)
+		// and join the positional values, so runAsync always receives a consistent
+		// (argument string, options) pair -- the same shape the single-positional path
+		// already produced.
+		let tmpCommandOptions = (pArguments.length >= 2) ? pArguments[pArguments.length - 2] : {};
+		let tmpPositionals = pArguments.slice(0, -2).filter((pValue) => ((typeof (pValue) === 'string') && (pValue.length > 0)));
+		let tmpArgumentString = tmpPositionals.join(' ');
+
 		// Build an async function to wrap the non-async behavior by default
 		return new Promise(
 			(pResolve, pReject) =>
 			{
-				this.runAsync(pArgumentString, pCommandOptions,
+				this.runAsync(tmpArgumentString, tmpCommandOptions,
 					(pError, pResult) =>
 					{
 						if (pError)
